@@ -1,0 +1,20 @@
+#The following VM parameters are currently required for some features in Studio 3T
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.io=ALL-UNNAMED
+--add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+--add-opens=java.base/java.text=ALL-UNNAMED
+--add-opens=java.desktop/java.awt.font=ALL-UNNAMED
+
+# Enter one VM parameter per line
+# For example, to adjust the maximum memory usage to 512 MB, uncomment the following line:
+# -Xmx512m
+# To include another file, uncomment the following line:
+# -include-options [path to other .vmoption file]
+
+
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+
+-javaagent:/path/payne-agent.jar
